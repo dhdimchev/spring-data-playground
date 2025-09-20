@@ -23,4 +23,3 @@
 ## Notes on Spring Data JDBC mapping
 - Aggregate reference (`AggregateReference<Author, Integer>`) stores only the foreign key (author id) within `post.author` column.
 - Aggregate children (Comments) are stored in a `comment` table with a foreign key `post` pointing to the owning Post.
-- This project intentionally returns `null` for not-found resources to keep the example minimal. In a production app, prefer 404 responses.
